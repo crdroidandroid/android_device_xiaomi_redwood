@@ -152,6 +152,9 @@ persist.vendor.camera.logInfoMask=false
 persist.vendor.camera.perflock.enable=0
 vendor.camera.aux.packagelist=com.android.camera,org.lineageos.aperture,org.lineageos.aperture.dev,com.snapchat.android
 
+# Dex2oat
+dalvik.vm.dex2oat64.enabled=true
+
 # Chipset
 ro.soc.manufacturer=QTI
 
