@@ -278,6 +278,7 @@ ro.incremental.enable=yes
 vendor.sys.thermal.data.path=/data/vendor/thermal/
 
 # USB
+persist.vendor.usb.config=mtp,adb
 vendor.usb.use_ffs_mtp=1
 
 # Wifi
