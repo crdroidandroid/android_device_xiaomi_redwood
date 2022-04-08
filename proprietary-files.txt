@@ -613,6 +613,12 @@ vendor/lib64/hw/vendor.qti.hardware.capabilityconfigstore@1.0-impl.so
 product/etc/device_features/redwood.xml
 product/etc/device_features/redwoodin.xml
 
+# Diag
+vendor/bin/diag-router
+vendor/etc/init/vendor.qti.diag.rc
+vendor/etc/vintf/manifest/vendor.qti.diag.hal.service.xml
+vendor/lib64/vendor.qti.diaghal@1.0.so;MODULE_SUFFIX=-vendor
+
 # Display calibration
 vendor/etc/mdss_dsi_m20_36_02_0a_dsc_vid_mi.xml
 vendor/etc/mdss_dsi_m20_42_0d_0b_dsc_vid_mi.xml
