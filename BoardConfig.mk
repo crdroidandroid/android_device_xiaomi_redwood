@@ -8,6 +8,8 @@ DEVICE_PATH := device/xiaomi/redwood
 
 BUILD_BROKEN_DUP_RULES := true
 
+BOARD_VENDOR := xiaomi
+
 # A/B
 AB_OTA_PARTITIONS += \
     boot \
@@ -173,7 +175,7 @@ TARGET_USERIMAGES_SPARSE_F2FS_DISABLED := true
 TARGET_BOARD_PLATFORM := lahaina
 
 # Power
-TARGET_POWERHAL_MODE_EXT := $(DEVICE_PATH)/power/power-mode.cpp
+TARGET_POWER_LIBPERFMGR_MODE_EXTENSION_LIB := //$(DEVICE_PATH):libperfmgr-ext-xiaomi
 
 # Properties
 TARGET_ODM_PROP += $(DEVICE_PATH)/odm.prop
@@ -199,6 +201,7 @@ ENABLE_VENDOR_RIL_SERVICE := true
 VENDOR_SECURITY_PATCH := 2025-06-01
 
 # Sepolicy
+include device/lineage/sepolicy/libperfmgr/sepolicy.mk
 include device/qcom/sepolicy_vndr/SEPolicy.mk
 
 SYSTEM_EXT_PRIVATE_SEPOLICY_DIRS += $(DEVICE_PATH)/sepolicy/private
