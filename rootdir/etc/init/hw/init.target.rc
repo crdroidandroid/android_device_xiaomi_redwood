@@ -115,6 +115,9 @@ on post-fs-data
     mkdir /data/vendor/goodix 0770 system system
     mkdir /mnt/vendor/persist/goodix 0770 system system
     mkdir /data/vendor/fpdump 0770 system system
+	
+    # Create ultrasound directory
+    mkdir /data/vendor/audio/ultrasound 0770 audioserver audio
 
 on early-boot
     # Enable WLAN cold boot calibration
