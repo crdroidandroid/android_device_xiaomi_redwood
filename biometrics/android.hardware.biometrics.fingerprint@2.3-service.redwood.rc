@@ -1,0 +1,22 @@
+service vendor.fps_hal /vendor/bin/hw/android.hardware.biometrics.fingerprint@2.3-service.redwood
+    class late_start
+    user system
+    group system drmrpc diag input uhid
+
+on init
+    # Goodix fingerprint
+    chmod 0666 /dev/goodix_fp
+    chown system system /dev/goodix_fp
+
+on boot
+    chmod 0666 /dev/input/event2
+
+on post-fs-data
+    mkdir /data/gf_data 0770 system system
+    mkdir /data/vendor/misc 0770 system system
+    mkdir /data/vendor/misc/mi_fp 0770 system system
+    mkdir /persist/mi_fp 0770 system system
+    mkdir /mnt/vendor/persist/mi_fp 0770 system system
+    mkdir /data/vendor/fpdump 0770 system system
+    mkdir /data/vendor/goodix 0770 system system
+    mkdir /mnt/vendor/persist/goodix 0770 system system
