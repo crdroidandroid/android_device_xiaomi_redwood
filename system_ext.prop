@@ -1,2 +1,6 @@
 # DPM
 persist.vendor.dpm.feature=11
+
+# MTE
+persist.arm64.memtag.system_server=off
+
