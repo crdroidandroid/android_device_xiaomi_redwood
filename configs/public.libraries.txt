@@ -6,4 +6,8 @@ libfastcvopt.so
 liblistensoundmodel2.so
 libOpenCL.so
 libSNPE.so
+libhta.so
+libsnpe_dsp_domains_v2.so
+libsnpe_dsp_domains_v3.so
 libmialgo_ai_vision.so
+libmialgo_utils.so
