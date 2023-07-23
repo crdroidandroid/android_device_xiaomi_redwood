@@ -146,9 +146,6 @@ on boot
     write /sys/block/sda/queue/wbt_lat_usec 75000
 
     # Set fingerprint related permissions
-    chown system system /sys/devices/platform/soc/soc:qcom,dsi-display-primary/fod_hbm
-    chown system system /sys/devices/platform/soc/soc:qcom,dsi-display-primary/fod_ui
-    chown system system /sys/devices/virtual/touch/tp_dev/fod_status
     chown system system /sys/bus/platform/devices/soc:fingerprint_fpc/irq
     chown system system /sys/bus/platform/devices/soc:fingerprint_fpc/irq_enable
     chown system system /sys/bus/platform/devices/soc:fingerprint_fpc/wakeup_enable
