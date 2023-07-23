@@ -4,7 +4,7 @@
  * SPDX-License-Identifier: Apache-2.0
  */
 
-#define LOG_TAG "UdfpsHandler.xiaomi_sm8350"
+#define LOG_TAG "UdfpsHandler.redwood"
 
 #include <android-base/logging.h>
 

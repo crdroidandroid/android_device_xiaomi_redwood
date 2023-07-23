@@ -15,7 +15,7 @@
 -->
 <!-- Xiaomi sm8350 specific carrier overlays -->
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.android.carrierconfig.xiaomi_sm8350"
+    package="com.android.carrierconfig.redwood"
     android:versionCode="1"
     android:versionName="1.0">
     <application android:hasCode="false" />

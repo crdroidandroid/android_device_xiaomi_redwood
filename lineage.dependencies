@@ -1,7 +1,7 @@
 [
   {
-    "repository": "android_kernel_xiaomi_sm8350",
-    "target_path": "kernel/xiaomi/sm8350"
+    "repository": "android_kernel_xiaomi_redwood",
+    "target_path": "kernel/xiaomi/redwood"
   },
   {
     "repository": "android_hardware_xiaomi",
