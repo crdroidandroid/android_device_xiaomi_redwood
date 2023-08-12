@@ -55,6 +55,8 @@ blob_fixups: blob_fixups_user_type = {
         .sig_replace('29 07 00 94', '1F 20 03 D5'),
     'vendor/lib64/hw/com.qti.chi.override.so': blob_fixup()
         .add_needed('libprocessgroup_shim.so'),
+    'vendor/etc/init/vendor.xiaomi.hardware.citsensorservice@1.1-service.rc': blob_fixup()
+        .add_line_if_missing('    task_profiles ServiceCapacityLow'),
     'vendor/etc/media_yupik_v1/video_system_specs.json': blob_fixup()
         .regex_replace('"max_retry_alloc_output_timeout": 10000,', '"max_retry_alloc_output_timeout": 0,'),
     'vendor/etc/msm_irqbalance.conf': blob_fixup()
