@@ -188,3 +188,10 @@ service vendor.nv_mac /vendor/bin/nv_mac
 on property:sys.boot_completed=1
     # STOP EATING MY BATTERY AFTER 100H OF UPTIME FUCK YOU
     stop statsd
+
+service citsensor-hal-1-1 /vendor/bin/hw/vendor.xiaomi.hardware.citsensorservice@1.1-service
+    class late_start
+    user system
+    group system input
+    override
+    task_profiles ServiceCapacityLow
