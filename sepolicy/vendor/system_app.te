@@ -3,3 +3,16 @@ allow system_app vendor_sysfs_battery_supply:file { getattr open read };
 
 # allow system apps to read battery status
 r_dir_file(system_app, vendor_sysfs_battery_supply)
+
+allow system_app proc_pagetypeinfo:file r_file_perms;
+
+# Incremental
+get_prop(system_app, incremental_prop)
+# allow apps like settings to check the file signature of an apk installed on
+# the Incremental File System, fill missing blocks and get the app status and loading progress
+allowxperm system_app apk_data_file:file ioctl {
+  INCFS_IOCTL_READ_SIGNATURE
+  INCFS_IOCTL_FILL_BLOCKS
+  INCFS_IOCTL_GET_BLOCK_COUNT
+  INCFS_IOCTL_GET_FILLED_BLOCKS
+};
