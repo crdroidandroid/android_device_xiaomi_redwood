@@ -26,9 +26,9 @@ PRODUCT_SYSTEM_NAME := redwood_global
 PRODUCT_SYSTEM_DEVICE := redwood
 
 PRODUCT_BUILD_PROP_OVERRIDES += \
-    PRIVATE_BUILD_DESC="redwood_global-user 13 RKQ1.211001.001 V14.0.2.0.TMSMIXM release-keys" \
+    PRIVATE_BUILD_DESC="redwood_global-user 13 RKQ1.211001.001 V14.0.4.0.TMSMIXM release-keys" \
     TARGET_DEVICE=$(PRODUCT_SYSTEM_DEVICE) \
     TARGET_PRODUCT=$(PRODUCT_SYSTEM_NAME)
 
 # Set BUILD_FINGERPRINT variable to be picked up by both system and vendor build.prop
-BUILD_FINGERPRINT := POCO/redwood_global/redwood:13/RKQ1.211001.001/V14.0.2.0.TMSMIXM:user/release-keys
+BUILD_FINGERPRINT := POCO/redwood_global/redwood:13/RKQ1.211001.001/V14.0.4.0.TMSMIXM:user/release-keys
