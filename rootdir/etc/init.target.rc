@@ -189,3 +189,11 @@ service vendor.nv_mac /vendor/bin/nv_mac
     user system
     group system inet net_admin wifi net_raw
     oneshot
+
+on property:graphics.display.kernel_idle_timer.enabled=true
+    # Switch display mode to 60hz when idle
+    write /sys/devices/platform/soc/soc:qcom,dsi-display-primary/idle_mode "@60"
+
+on property:graphics.display.kernel_idle_timer.enabled=false
+    # Disable agressive idle mode switching
+    write /sys/devices/platform/soc/soc:qcom,dsi-display-primary/idle_mode "none"
