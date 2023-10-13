@@ -55,9 +55,6 @@ fi
 
 function blob_fixup() {
     case "${1}" in
-        system_ext/lib64/libwfdnative.so)
-            "${PATCHELF}" --remove-needed "android.hidl.base@1.0.so" "${2}"
-            ;;
          vendor/etc/media_yupik_v1/video_system_specs.json)
             sed -i "/max_retry_alloc_output_timeout/ s/10000/0/" "${2}"
             ;;
