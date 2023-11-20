@@ -1,6 +1,6 @@
 #!/bin/bash
 #
-# Copyright (C) 2020 The LineageOS Project
+# Copyright (C) 2023 The LineageOS Project
 #
 # SPDX-License-Identifier: Apache-2.0
 #
@@ -8,7 +8,7 @@
 set -e
 
 # Required!
-export DEVICE=lisa
+export DEVICE=redwood
 export DEVICE_COMMON=sm8350-common
 export VENDOR=xiaomi
 

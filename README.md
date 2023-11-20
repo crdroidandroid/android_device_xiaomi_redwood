@@ -1,11 +1,11 @@
-Copyright (C) 2022 The LineageOS Project
+Copyright (C) 2023 The LineageOS Project
 
-Device configuration for Xiaomi 11 Lite 5G NE
+Device configuration for Poco X5 Pro 5G/Redmi Note 12 Pro Speed
 =========================================
 
-The Xiaomi 11 Lite 5G NE (codenamed _"lisa"_) is a mid-range smartphone from Xiaomi.
+The Poco X5 Pro 5G/Redmi Note 12 Pro Speed (codenamed _"redwood"_) is a mid-range smartphone from Xiaomi.
 
-It was released in September 2021.
+It was released in February 2023.
 
 ## Device specifications
 
@@ -16,11 +16,11 @@ Chipset | Qualcomm Snapdragon 778G 5G (SM7325-2-AB)
 GPU     | Adreno 642L
 Memory  | 6/8 GB, LPDDR4X
 Storage | 128/256 GB, UFS 2.2
-Shipped Android Version | 11
-Battery | Non-removable 4250 mAh
-Display | 2400 x 1080 pixels, 6.55 inches
-Camera  | 64 MP main, 8 MP ultra-wide angle, 5 MP telemacro, 20 MP front
+Shipped Android Version | 12
+Battery | Non-removable 5000 mAh
+Display | 2400 x 1080 pixels, 6.67 inches
+Camera  | 108 MP main, 8 MP ultra-wide angle, 2 MP telemacro, 16 MP front
 
 ## Device picture
 
-![Xiaomi 11 Lite 5G NE](https://i01.appmifile.com/webfile/globalimg/products/pc/xiaomi-11-lite-5g-ne/specs_01-fix.png "Xiaomi 11 Lite 5G NE")
+![Poco X5 Pro 5G/Redmi Note 12 Pro Speed](https://i.blogs.es/98a725/poco-x5-pro/1366_2000.jpeg "Poco X5 Pro 5G/Redmi Note 12 Pro Speed")
