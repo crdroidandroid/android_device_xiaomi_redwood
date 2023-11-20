@@ -16,31 +16,26 @@
     <ctl name="TX_CDC_DMA_TX_4 Channels" value="One" />
     <ctl name="TX_CDC_DMA_TX_4 SampleRate" value="KHZ_96" />
     <ctl name="TX_CDC_DMA_TX_4 Format" value="S16_LE" />
+    <ctl name="PRI_TDM_RX_VI_FB_MUX" value="ZERO" />
     <ctl name="PRI_TDM_RX_0 Channels" value="Two" />
     <ctl name="PRI_TDM_RX_0 Format" value="S32_LE" />
-    <ctl name="PRI_TDM_RX_0 SampleRate" value="KHZ_96" />
+    <ctl name="PRI_TDM_RX_0 SampleRate" value="KHZ_48" />
     <ctl name="PRI_TDM_TX_0 Channels" value="Two" />
     <ctl name="PRI_TDM_TX_0 Format" value="S32_LE" />
-    <ctl name="PRI_TDM_TX_0 SampleRate" value="KHZ_96" />
-    <ctl name="PRI_TDM_RX_1 Channels" value="One" />
-    <ctl name="PRI_TDM_RX_1 Format" value="S32_LE" />
-    <ctl name="PRI_TDM_RX_1 SampleRate" value="KHZ_96" />
+    <ctl name="PRI_TDM_TX_0 SampleRate" value="KHZ_48" />
+    <ctl name="RX_CDC_DMA_RX_0 SampleRate" value="KHZ_48" />
     <ctl name="USB_AUDIO_RX Format" value="S24_LE" />
     <ctl name="COMP1 Switch" value="0" />
     <ctl name="COMP2 Switch" value="0" />
     <ctl name="HPHL Volume" value="20" />
     <ctl name="HPHR Volume" value="20" />
 
-    <!-- for mius start -->
-    <ctl name="Mi_Ultrasound Enable" value="Off" />
-    <ctl name="Mi_Ultrasound RampDown" value="Off"/>
-    <ctl name="Mi_Ultrasound Event" value="0"/>
-    <ctl name="Mi_Ultrasound Mode" value="0"/>
-    <ctl name="Mi_Ultrasound Rx Port" value="Off"/>
-    <ctl name="Mi_Ultrasound Microphone Index" value="0"/>
-    <ctl name="Mi_Ultrasound ReportNone" value="0"/>
-    <ctl name="Mi_Ultrasound Rx Device" value="1"/>
-    <!-- for mius end -->
+    <ctl name="aw882xx_rx_switch" value="Disable" />
+    <ctl name="aw882xx_tx_switch" value="Disable" />
+    <ctl name="aw882xx_copp_switch" value="Disable" />
+    <ctl name="aw_dev_0_prof" value="Music" />
+    <ctl name="aw_dev_0_switch" value="Enable" />
+    <ctl name="aw_dev_1_switch" value="Disable" />
 
     <ctl name="RX_CDC_DMA_RX_6 Channels" value="One" />
     <ctl name="SWR DAC_Port Switch" value="1" />
@@ -128,6 +123,8 @@
 
     <path name="low-latency-playback speaker">
         <ctl name="PRI_TDM_RX_0 Audio Mixer MultiMedia5" value="1" />
+        <ctl name="aw882xx_fadein_us" value="0" />
+        <ctl name="aw882xx_fadeout_us" value="0" />
     </path>
 
     <path name="audio-ull-playback speaker">
@@ -784,15 +781,15 @@
     </path>
 
     <path name="ultrasound-proximity-output">
-    
+        <ctl name="Mi_Ultrasound Rx Device" value="0"/>
     </path>
 
     <path name="ultrasound-proximity-output handset">
-        
+        <ctl name="Mi_Ultrasound Rx Device" value="0"/>
     </path>
 
     <path name="ultrasound-proximity-output speaker">
-        
+        <ctl name="Mi_Ultrasound Rx Device" value="1"/>
     </path>
 
     <path name="ultrasound-proximity-output ultrasund-rx">
@@ -842,7 +839,7 @@
 
     <!--  Ultrasound Output Device  -->
     <path name="ultrasound-output">
-        <!-- ctl name="TFA Profile" value="handset" / -->
+        <ctl name="aw_dev_0_prof" value="Receiver" />
     </path>
 
     <!--  Ultrasound Input Device  -->
@@ -857,7 +854,7 @@
         <ctl name="TX2 MODE" value="ADC_LP" />
         <ctl name="HDR34 MUX" value="HDR34" />
         <ctl name="ADC3_MIXER Switch" value="1" />
-        <ctl name="ADC3 Volume" value="8" />
+        <ctl name="ADC3 Volume" value="12" />
     </path>
 
     <!--  Ultrasound Stereo Input Device  -->
@@ -883,15 +880,32 @@
 
     <!--   Output Device  -->
     <path name="speaker">
-        <ctl name="TFA Profile" value="stereo" />
+        <ctl name="PRI_TDM_RX_0 SampleRate" value="KHZ_48" />
+        <ctl name="PRI_TDM_RX_0 Channels" value="Two" />
+        <ctl name="PRI_TDM_RX_0 Format" value="S32_LE" />
+        <ctl name="aw_dev_1_prof" value="Music" />
+        <ctl name="aw_dev_1_switch" value="Enable" />
+        <ctl name="aw_dev_0_prof" value="Music" />
+        <ctl name="aw_dev_0_switch" value="Enable" />
+        <ctl name="aw882xx_rx_switch" value="Enable" />
     </path>
 
     <path name="speaker-mono">
-        <ctl name="TFA Profile" value="right" />
+        <ctl name="PRI_TDM_RX_0 SampleRate" value="KHZ_48" />
+        <ctl name="PRI_TDM_RX_0 Channels" value="Two" />
+        <ctl name="PRI_TDM_RX_0 Format" value="S32_LE" />
+        <ctl name="aw_dev_1_prof" value="Music" />
+        <ctl name="aw_dev_1_switch" value="Enable" />
+        <ctl name="aw_dev_0_switch" value="Disable" />
+        <ctl name="aw882xx_rx_switch" value="Enable" />
     </path>
 
     <path name="speaker-mono-2">
-        <ctl name="TFA Profile" value="left" />
+        <ctl name="PRI_TDM_RX_0 SampleRate" value="KHZ_48" />
+        <ctl name="PRI_TDM_RX_0 Channels" value="Two" />
+        <ctl name="PRI_TDM_RX_0 Format" value="S32_LE" />
+        <ctl name="aw_dev_0_switch" value="Enable" />
+        <ctl name="aw882xx_rx_switch" value="Enable" />
     </path>
 
     <path name="speaker-protected">
@@ -916,11 +930,13 @@
 
     <path name="handset">
         <ctl name="PRI_TDM_RX_0 Channels" value="One" />
-        <ctl name="TFA Profile" value="handset" />
+        <ctl name="aw_dev_0_prof" value="Receiver" />
+        <ctl name="aw_dev_0_switch" value="Enable" />
     </path>
 
     <!--  WCD Output devices -->
     <path name="headphones">
+        <ctl name="RX_CDC_DMA_RX_0 SampleRate" value="KHZ_48" />
         <ctl name="RX_MACRO RX0 MUX" value="AIF1_PB" />
         <ctl name="RX_MACRO RX1 MUX" value="AIF1_PB" />
         <ctl name="RX_CDC_DMA_RX_0 Channels" value="Two" />
@@ -1003,6 +1019,8 @@
         <ctl name="ADC4 MUX" value="INP5" />
         <ctl name="TX3 MODE" value="ADC_LP" />
         <ctl name="ADC4_MIXER Switch" value="1" />
+        <ctl name="ADC1 Volume" value="20" />
+        <ctl name="ADC4 Volume" value="20" />
     </path>
 
     <!-- Dual MIC devices -->
@@ -1033,17 +1051,6 @@
         <path name="handset-dmic-endfire" />
     </path>
 
-    <path name="voice-rec-mic">
-        <ctl name="TX_AIF1_CAP Mixer DEC0" value="1" />
-        <ctl name="TX DEC0 MUX" value="SWR_MIC" />
-        <ctl name="TX SMIC MUX0" value="SWR_MIC0" />
-        <ctl name="TX0 MODE" value="ADC_LP" />
-        <ctl name="ADC1 ChMap" value="SWRM_TX1_CH1" />
-        <ctl name="ADC1_MIXER Switch" value="1" />
-        <ctl name="ADC1 Volume" value="8" />
-        <ctl name="TX_DEC0 Volume" value="92" />
-    </path>
- 
     <path name="speaker-mic">
         <path name="amic5" />
     </path>

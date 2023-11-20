@@ -224,6 +224,7 @@
     <ctl name="MultiMedia1 Mixer PRI_TDM_TX_0" value="0" />
     <ctl name="MultiMedia2 Mixer PRI_TDM_TX_0" value="0" />
     <!-- fm end -->
+
     <!-- Multimode Voice1 -->
     <ctl name="WSA_CDC_DMA_RX_0_Voice Mixer VoiceMMode1" value="0" />
     <ctl name="RX_CDC_DMA_RX_0_Voice Mixer VoiceMMode1" value="0" />
@@ -243,6 +244,7 @@
     <ctl name="PROXY_RX_Voice Mixer VoiceMMode1" value="0" />
     <ctl name="VoiceMMode1_Tx Mixer PROXY_TX_MMode1" value="0" />
     <!-- Miltimode Voice1 end-->
+
     <!-- Multimode Voice2 -->
     <ctl name="WSA_CDC_DMA_RX_0_Voice Mixer VoiceMMode2" value="0" />
     <ctl name="RX_CDC_DMA_RX_0_Voice Mixer VoiceMMode2" value="0" />
@@ -264,24 +266,29 @@
     <ctl name="PROXY_RX_Voice Mixer VoiceMMode2" value="0" />
     <ctl name="VoiceMMode2_Tx Mixer PROXY_TX_MMode2" value="0" />
     <!-- Multimode Voice2 end-->
+
     <!-- Voice external ec. reference -->
     <ctl name="VOC_EXT_EC MUX" value="NONE" />
     <!-- Voice external ec. reference end -->
+
     <!-- RT Proxy Cal -->
     <ctl name="RT_PROXY_1_RX SetCalMode" value="CAL_MODE_NONE" />
     <ctl name="RT_PROXY_1_TX SetCalMode" value="CAL_MODE_NONE" />
     <!-- RT Proxy Cal end -->
+
     <!-- Incall Recording -->
     <ctl name="MultiMedia9 Mixer VOC_REC_UL" value="0" />
     <ctl name="MultiMedia9 Mixer VOC_REC_DL" value="0" />
     <ctl name="MultiMedia8 Mixer VOC_REC_UL" value="0" />
     <ctl name="MultiMedia8 Mixer VOC_REC_DL" value="0" />
     <!-- Incall Recording End -->
+
     <!-- Incall Music -->
     <ctl name="Incall_Music Audio Mixer MultiMedia2" value="0" />
     <ctl name="Incall_Music Audio Mixer MultiMedia9" value="0" />
     <ctl name="Incall_Music_2 Audio Mixer MultiMedia9" value="0" />
     <!-- Incall Music End -->
+
     <!-- compress-voip-call start -->
     <ctl name="WSA_CDC_DMA_RX_0_Voice Mixer Voip" value="0" />
     <ctl name="RX_CDC_DMA_RX_0_Voice Mixer Voip" value="0" />
@@ -294,10 +301,8 @@
     <ctl name="USB_AUDIO_RX_Voice Mixer Voip" value="0" />
     <ctl name="Voip_Tx Mixer USB_AUDIO_TX_Voip" value="0" />
     <!-- compress-voip-call end-->
+
     <!-- Audio BTSCO -->
-    <ctl name="SLIMBUS_7_RX Audio Mixer MultiMedia1" value="0" />
-    <ctl name="SLIMBUS_7_RX Audio Mixer MultiMedia4" value="0" />
-    <ctl name="SLIMBUS_7_RX Audio Mixer MultiMedia5" value="0" />
     <ctl name="SLIMBUS_7_RX Audio Mixer MultiMedia6" value="0" />
     <ctl name="MultiMedia1 Mixer SLIM_7_TX" value="0" />
     <!-- audio record compress-->
@@ -305,15 +310,19 @@
     <ctl name="MultiMedia8 Mixer SLIM_7_TX" value="0" />
     <ctl name="MultiMedia8 Mixer AFE_PCM_TX" value="0" />
     <!-- audio record compress end-->
+
     <!-- split a2dp -->
     <ctl name="AFE Input Channels" value="Zero" />
     <ctl name="SLIM7_RX ADM Channels" value="Zero" />
     <!-- split a2dp end-->
+
     <!-- ADSP testfwk -->
     <ctl name="WSA_CDC_DMA_RX_0_DL_HL Switch" value="0" />
     <ctl name="RX_CDC_DMA_RX_0_DL_HL Switch" value="0" />
     <!-- ADSP testfwk end-->
+
     <ctl name="AFE_PCM_RX Audio Mixer MultiMedia3" value="0" />
+
     <!-- Codec controls -->
     <!-- WSA controls -->
     <ctl name="WSA RX0 MUX" value="ZERO" />
@@ -331,6 +340,7 @@
     <ctl name="SpkrLeft SWR DAC_Port Switch" value="0" />
     <ctl name="SpkrRight SWR DAC_Port Switch" value="0" />
     <ctl name="SWR DAC_Port Switch" value="0" />
+
     <!-- RX Controls -->
     <ctl name="RX_MACRO RX0 MUX" value="ZERO" />
     <ctl name="RX_MACRO RX1 MUX" value="ZERO" />
@@ -357,6 +367,7 @@
     <ctl name="HPH_R Switch" value="0" />
     <ctl name="DSD_L Switch" value="0" />
     <ctl name="DSD_R Switch" value="0" />
+
     <!-- TX Controls -->
     <!-- Enable these switches at the end of a path -->
     <ctl name="ADC1_MIXER Switch" value="1" />
@@ -367,8 +378,8 @@
     <ctl name="SWR_MIC1 SWR_DMIC_MIXER Switch" value="0" />
     <ctl name="SWR_MIC2 SWR_DMIC_MIXER Switch" value="0" />
     <ctl name="SWR_MIC3 SWR_DMIC_MIXER Switch" value="0" />
+
     <ctl name="TX_CDC_DMA_TX_3 Channels" value="One" />
-    <ctl name="MultiMedia1 Mixer TX_CDC_DMA_TX_3" value="0" />
     <ctl name="ADC2 MUX" value="INP2" />
     <ctl name="DEC0_BCS Switch" value="0" />
     <ctl name="ADC2_BCS Disable" value="0" />
@@ -2237,21 +2248,7 @@
     <path name="back-mic">
         <path name="amic4" />
     </path>
-    <path name="MT-speaker">
-        <ctl name="TFA Profile" value="left" />
-    </path>
-    <path name="MD-speaker">
-        <ctl name="TFA Profile" value="right" />
-    </path>
-    <path name="FT-speaker">
-        <ctl name="TFA Profile" value="left" />
-    </path>
-    <path name="FD-speaker">
-        <ctl name="TFA Profile" value="right" />
-    </path>
-    <path name="FTD-speaker">
-        <ctl name="TFA Profile" value="stereo" />
-    </path>
+
     <path name="ultrasound-capture-input">
     </path>
     <path name="ultrasound-proximity">
@@ -2811,6 +2808,23 @@
         <ctl name="ADC1 Volume" value="6" />
         <ctl name="ADC4 Volume" value="6" />
     </path>
+
+    <path name="record-mic">
+        <ctl name="TX_CDC_DMA_TX_3 Channels" value="Two" />
+        <ctl name="TX_AIF1_CAP Mixer DEC1" value="1" />
+        <ctl name="TX DEC1 MUX" value="SWR_MIC" />
+        <ctl name="TX SMIC MUX1" value="SWR_MIC0" />
+        <ctl name="TX_AIF1_CAP Mixer DEC0" value="1" />
+        <ctl name="TX DEC0 MUX" value="SWR_MIC" />
+        <ctl name="TX SMIC MUX0" value="SWR_MIC5" />
+        <ctl name="ADC1 ChMap" value="SWRM_TX1_CH1" />
+        <ctl name="ADC1_MIXER Switch" value="1" />
+        <ctl name="ADC3 ChMap" value="SWRM_TX2_CH2" />
+        <ctl name="ADC3_MIXER Switch" value="1" />
+        <ctl name="ADC3 Volume" value="6" />
+        <ctl name="ADC1 Volume" value="6" />
+    </path>
+
     <!-- Dual MIC devices -->
     <path name="handset-dmic-endfire">
         <ctl name="TX_CDC_DMA_TX_3 Channels" value="Two" />
@@ -3092,6 +3106,7 @@
     </path>
     <path name="unprocessed-stereo-mic">
         <path name="voice-rec-dmic-ef" />
+        <ctl name="TX_DEC1 Volume" value="93" />
     </path>
     <path name="unprocessed-three-mic">
         <path name="three-mic" />
