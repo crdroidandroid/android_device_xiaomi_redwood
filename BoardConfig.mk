@@ -172,6 +172,9 @@ TARGET_COPY_OUT_PRODUCT := product
 TARGET_USERIMAGES_SPARSE_EXT_DISABLED := true
 TARGET_USERIMAGES_SPARSE_F2FS_DISABLED := true
 
+# Firmware
+-include vendor/xiaomi/redwood-firmware/config.mk
+
 # Platform
 TARGET_BOARD_PLATFORM := lahaina
 
