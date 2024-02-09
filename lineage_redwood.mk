@@ -11,7 +11,7 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 # Inherit from redwood device
 $(call inherit-product, device/xiaomi/redwood/device.mk)
 
-# Inherit some common Lineage stuff.
+# Inherit some common crDroid stuff.
 $(call inherit-product, vendor/lineage/config/common_full_phone.mk)
 
 PRODUCT_BRAND := POCO
@@ -32,3 +32,7 @@ PRODUCT_BUILD_PROP_OVERRIDES += \
 
 # Set BUILD_FINGERPRINT variable to be picked up by both system and vendor build.prop
 BUILD_FINGERPRINT := POCO/redwood_global/redwood:14/UKQ1.240624.001/OS2.0.7.0.UMSMIXM:user/release-keys
+
+# Exclude apps
+TARGET_DISABLE_MATLOG := true
+TARGET_EXCLUDES_AUDIOFX := true
