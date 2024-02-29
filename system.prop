@@ -45,3 +45,8 @@ persist.vendor.vonr_setting_support=1
 
 # Sensors
 persist.vendor.sensors.enable.mag_filter=true
+
+# SkiaGL Threaded
+debug.renderengine.backend=skiaglthreaded
+debug.hwui.renderer=skiagl
+renderthread.skia.reduceopstasksplitting=true
