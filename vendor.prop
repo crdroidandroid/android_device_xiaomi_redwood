@@ -152,6 +152,9 @@ ro.hardware.camera=xiaomi
 # Chipset
 ro.soc.manufacturer=QTI
 
+# FS-verity
+ro.apk_verity.mode=2
+
 # Crypto
 ro.crypto.dm_default_key.options_format.version=2
 ro.crypto.volume.metadata.method=dm-default-key
