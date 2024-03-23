@@ -1,11 +1,11 @@
 on property:init.svc.vendor.charger=running
     wait /sys/class/power_supply/usb/type
-    start mi_thermald
+    start vendor.mi_thermald
 on boot
     wait /sys/class/power_supply/usb/type
-    start mi_thermald
+    start vendor.mi_thermald
 
-service mi_thermald /vendor/bin/mi_thermald
+service vendor.mi_thermald /vendor/bin/mi_thermald
     class main
     user root
     group system
