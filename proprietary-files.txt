@@ -631,6 +631,18 @@ vendor/etc/mdss_dsi_m20_42_0d_0b_dsc_vid_mi.xml
 vendor/etc/qdcm_calib_data_xiaomi_36_02_0a_video_mode_dsc_dsi_panel.xml
 vendor/etc/qdcm_calib_data_xiaomi_42_0d_0b_video_mode_dsc_dsi_panel.xml
 
+# Display feature
+vendor/bin/displayfeature
+vendor/bin/hw/vendor.xiaomi.hardware.displayfeature@1.0-service
+vendor/etc/init/vendor.xiaomi.hardware.displayfeature@1.0-service.rc
+vendor/lib64/hw/displayfeature.default.so
+vendor/lib64/hw/vendor.xiaomi.hardware.displayfeature@1.0-impl.so
+vendor/lib64/libclient2slpi.notifier.so
+vendor/lib64/libdisplayfeature.so
+vendor/lib64/libdisplayfeatureservice.so
+vendor/lib64/libmi-stc-HW-modulate.so
+vendor/lib64/vendor.xiaomi.hardware.displayfeature@1.0.so;MODULE_SUFFIX=_vendor
+
 # Display - from AOSPA
 vendor/etc/display/DPU660.xml|b26dd73e361546d89bf3d7082a471703dc6ac2cb
 vendor/etc/display/DPU670.xml|e5131a60ceff29ca5eb561eec7eddadef1d0486f
