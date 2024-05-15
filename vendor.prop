@@ -148,6 +148,8 @@ ro.bluetooth.a2dp_offload.supported=true
 # Camera
 camera.disable_zsl_mode=true
 ro.hardware.camera=xiaomi
+persist.vendor.camera.logInfoMask=false
+persist.vendor.camera.perflock.enable=0
 
 # Chipset
 ro.soc.manufacturer=QTI
