@@ -212,6 +212,17 @@ PRODUCT_COPY_FILES += \
 # IFAA manager
 PRODUCT_PACKAGES += \
      IFAAService
+	 
+# Input
+PRODUCT_PACKAGES += \
+    uinput-fortsense.kl \
+    uinput-fpc.kl \
+    uinput-goodix.kl
+
+PRODUCT_PACKAGES += \
+    uinput-fortsense.idc \
+    uinput-fpc.idc \
+    uinput-goodix.idc
 
 # IPACM
 PRODUCT_PACKAGES += \
