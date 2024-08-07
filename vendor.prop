@@ -150,6 +150,7 @@ camera.disable_zsl_mode=true
 ro.hardware.camera=xiaomi
 persist.vendor.camera.logInfoMask=false
 persist.vendor.camera.perflock.enable=0
+vendor.camera.aux.packagelist=com.android.camera,org.lineageos.aperture,org.lineageos.aperture.dev,com.snapchat.android
 
 # Chipset
 ro.soc.manufacturer=QTI
