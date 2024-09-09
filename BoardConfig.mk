@@ -17,6 +17,7 @@ TARGET_KERNEL_CONFIG += vendor/redwood_QGKI.config
 
 # Kernel modules
 BOOT_KERNEL_MODULES := \
+    focaltech_touch.ko \
     goodix_core.ko \
     hwid.ko \
     msm_drm.ko \
