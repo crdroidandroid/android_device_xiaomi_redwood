@@ -900,9 +900,9 @@ IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
         <instance>default</instance>
     </interface>
     </hal>
-    <hal format="hidl" optional="true">
+    <hal format="aidl" optional="true">
         <name>android.hardware.usb</name>
-        <version>1.0-3</version>
+        <version>1</version>
         <interface>
             <name>IUsb</name>
             <instance>default</instance>
