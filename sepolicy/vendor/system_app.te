@@ -16,3 +16,6 @@ allowxperm system_app apk_data_file:file ioctl {
   INCFS_IOCTL_GET_BLOCK_COUNT
   INCFS_IOCTL_GET_FILLED_BLOCKS
 };
+
+# Parts
+allow system_app sysfs_thermal:file write;
