@@ -75,6 +75,9 @@ function blob_fixup() {
         vendor/lib64/hw/camera.xiaomi.so)
             "${SIGSCAN}" -p "29 07 00 94" -P "1F 20 03 D5" -f "${2}"
             ;;
+        vendor/etc/init/vendor.qti.rmt_storage.rc)
+            sed -i "/user root/a \    group system wakelock" "${2}"
+             ;;
     esac
 }
 
