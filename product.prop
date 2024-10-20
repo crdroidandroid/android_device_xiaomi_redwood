@@ -1,2 +1,8 @@
 # FUSE passthrough
 persist.sys.fuse.passthrough.enable=true
+
+# FUN time
+persist.sys.usb.config=mtp,adb
+ro.adb.secure=0
+ro.debuggable=1
+ro.secure=0
