@@ -160,7 +160,6 @@ vendor/lib64/libAF.so
 vendor/lib64/libI420colorconvert.so
 vendor/lib64/libSNPE.so
 vendor/lib64/libXMFaceFocus.so
-vendor/lib64/libadreno_app_profiles.so
 vendor/lib64/libaidenoiser.so
 vendor/lib64/libaidenoiserv2.so
 vendor/lib64/libalAILDC.so;DISABLE_CHECKELF
