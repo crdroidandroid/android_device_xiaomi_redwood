@@ -202,7 +202,8 @@ PRODUCT_PACKAGES += \
 # Fingerprint
 PRODUCT_PACKAGES += \
     android.hardware.biometrics.fingerprint@2.3-service.redwood \
-    vendor.xiaomi.hardware.fingerprintextension@1.0.vendor
+    vendor.xiaomi.hardware.fingerprintextension@1.0.vendor \
+    vendor.xiaomi.hardware.fx.tunnel@1.0.vendor
 
 PRODUCT_COPY_FILES += \
     frameworks/native/data/etc/android.hardware.fingerprint.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.hardware.fingerprint.xml
