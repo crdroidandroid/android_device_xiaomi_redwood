@@ -278,6 +278,9 @@ ro.vendor.use_data_netmgrd=true
 telephony.lteOnCdmaDevice=1
 persist.sys.radio.force_lte_ca=true
 
+# Recovery properties
+ro.recovery.batteryless=true
+
 # Sensors
 persist.vendor.sensors.allow_non_default_discovery=true
 persist.vendor.sensors.on_change_sample_period=true
