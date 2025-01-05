@@ -157,6 +157,10 @@ dalvik.vm.dex2oat64.enabled=true
 # Chipset
 ro.soc.manufacturer=QTI
 
+# Fingerprint
+persist.vendor.fingerprint.type=side
+persist.vendor.fingerprint.sensor_location=1080|920|200|local:4630946480857061762,1080|920|200|local:4630946622257352578
+
 # FS-verity
 ro.apk_verity.mode=2
 
