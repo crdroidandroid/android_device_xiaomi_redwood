@@ -210,10 +210,10 @@ vendor/lib64/libSNPE.so
 vendor/lib64/libXMFaceFocus.so
 vendor/lib64/libaidenoiser.so
 vendor/lib64/libaidenoiserv2.so
-vendor/lib64/libalAILDC.so;DISABLE_CHECKELF
+vendor/lib64/libalAILDC.so
 vendor/lib64/libalCFR.so
-vendor/lib64/libalLDC.so;DISABLE_CHECKELF
-vendor/lib64/libalhLDC.so;DISABLE_CHECKELF
+vendor/lib64/libalLDC.so
+vendor/lib64/libalhLDC.so
 vendor/lib64/libanc_dc_base.so
 vendor/lib64/libanc_hdr.so
 vendor/lib64/libancbase.so
@@ -252,15 +252,15 @@ vendor/lib64/libmialgo_aio_seg.so
 vendor/lib64/libmialgo_basic.so
 vendor/lib64/libmialgo_image_colourkeeping.so
 vendor/lib64/libmialgo_pureView.so
-vendor/lib64/libmialgo_rfs.so;DISABLE_CHECKELF
+vendor/lib64/libmialgo_rfs.so
 vendor/lib64/libmialgo_sd.so
 vendor/lib64/libmialgo_utils.so
 vendor/lib64/libmialgo_video_colourkeeping.so
 vendor/lib64/libmialgo_video_seg.so
 vendor/lib64/libmialgoengine.so
 vendor/lib64/libmibokeh_855.so
-vendor/lib64/libmiphone_capture_bokeh.so;DISABLE_CHECKELF
-vendor/lib64/libmiphone_preview_bokeh.so;DISABLE_CHECKELF
+vendor/lib64/libmiphone_capture_bokeh.so
+vendor/lib64/libmiphone_preview_bokeh.so
 vendor/lib64/libmm-color-convertor.so
 vendor/lib64/libmpbase.so
 vendor/lib64/libnanopb.so
@@ -272,7 +272,7 @@ vendor/lib64/libopestriping.so
 vendor/lib64/libos.so
 vendor/lib64/libpreview_beautyeffect.so
 vendor/lib64/libqll10.so
-vendor/lib64/libqllengine.so;DISABLE_CHECKELF
+vendor/lib64/libqllengine.so
 vendor/lib64/librelight_only.so
 vendor/lib64/libremosaic_wrapper.so
 vendor/lib64/libremosaiclib.so
@@ -312,12 +312,12 @@ vendor/lib64/libarcsoft_beautyshot.so
 vendor/lib64/libarcsoft_dualcam_refocus_image.so
 vendor/lib64/libarcsoft_dualcam_refocus_video.so
 vendor/lib64/libarcsoft_hdr_detection.so
-vendor/lib64/libarcsoft_hdrplus_hvx_stub.so;DISABLE_CHECKELF
+vendor/lib64/libarcsoft_hdrplus_hvx_stub.so
 vendor/lib64/libarcsoft_high_dynamic_range.so
 vendor/lib64/libarcsoft_low_light_hdr.so
 vendor/lib64/libarcsoft_mf_superresolution.so
 vendor/lib64/libarcsoft_qnnhtp.so
-vendor/lib64/libarcsoft_super_night_raw.so;DISABLE_CHECKELF
+vendor/lib64/libarcsoft_super_night_raw.so
 
 # Camera camerax
 vendor/lib64/libcamxexternalformatutils.so
@@ -512,7 +512,7 @@ vendor/lib64/libmctfengine_stub.so
 vendor/lib64/libmiStereoFactoryRemapBasicLib.so
 vendor/lib64/libmmcamera_bestats.so
 vendor/lib64/libmmcamera_cac3.so
-vendor/lib64/libmmcamera_faceproc.so;DISABLE_CHECKELF
+vendor/lib64/libmmcamera_faceproc.so
 vendor/lib64/libmmcamera_faceproc2.so
 vendor/lib64/libmmcamera_lscv35.so
 vendor/lib64/libmmcamera_mfnr.so
@@ -1202,7 +1202,7 @@ vendor/bin/sscrpcd
 vendor/etc/init/init.vendor.sensors.rc
 vendor/etc/init/vendor.sensors.qti.rc
 vendor/etc/init/vendor.sensors.sscrpcd.rc
-vendor/lib64/libsensor_cal_v2.so;DISABLE_CHECKELF
+vendor/lib64/libsensor_cal_v2.so
 vendor/lib64/libsensorcal.so
 vendor/lib64/libsensorslog.so
 vendor/lib64/libssc.so

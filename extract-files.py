@@ -65,6 +65,18 @@ blob_fixups: blob_fixups_user_type = {
     'vendor/etc/init/vendor.qti.rmt_storage.rc': blob_fixup()
         .add_line_if_missing('    group system wakelock')
         .regex_replace(r'^(user root)', r'\1\n    group system wakelock'),
+     ('vendor/lib64/libalAILDC.so', 'vendor/lib64/libalLDC.so', 'vendor/lib64/libalhLDC.so'): blob_fixup()
+         .clear_symbol_version('AHardwareBuffer_allocate')
+         .clear_symbol_version('AHardwareBuffer_describe')
+         .clear_symbol_version('AHardwareBuffer_lock')
+         .clear_symbol_version('AHardwareBuffer_release')
+         .clear_symbol_version('AHardwareBuffer_unlock'),
+     'vendor/lib64/libarcsoft_hdrplus_hvx_stub.so': blob_fixup()
+         .clear_symbol_version('remote_handle_close')
+         .clear_symbol_version('remote_handle_invoke')
+         .clear_symbol_version('remote_handle_open'),
+     'vendor/lib64/libsensor_cal_v2.so': blob_fixup()
+         .add_needed('libjsoncpp_shim.so'),
 }  # fmt: skip
 
 module = ExtractUtilsModule(
