@@ -869,9 +869,9 @@ IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
              <instance>default</instance>
          </interface>
    </hal>
-   <hal format="hidl" optional="true">
+   <hal format="aidl" optional="true">
         <name>android.hardware.boot</name>
-        <version>1.2</version>
+        <version>1</version>
         <interface>
             <name>IBootControl</name>
             <instance>default</instance>
@@ -892,6 +892,14 @@ IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
             <instance>clearkey</instance>
         </interface>
     </hal>
+   <hal format="aidl" optional="true">
+      <name>android.hardware.ir</name>
+      <version>1</version>
+      <interface>
+          <name>IConsumerIr</name>
+          <instance>default</instance>
+      </interface>
+    </hal>
     <hal format="aidl" optional="true">
     <name>android.hardware.nfc</name>
        <version>1</version>
@@ -899,6 +907,14 @@ IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
         <name>INfc</name>
         <instance>default</instance>
     </interface>
+    </hal>
+     <hal format="aidl" optional="true">
+     <name>android.hardware.health</name>
+         <version>3</version>
+         <interface>
+             <name>IHealth</name>
+             <instance>default</instance>
+         </interface>
     </hal>
     <hal format="aidl" optional="true">
         <name>android.hardware.usb</name>
@@ -909,22 +925,24 @@ IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
         </interface>
     </hal>
     <hal format="aidl" optional="true">
-        <name>android.hardware.wifi</name>
-        <interface>
-            <name>IWifi</name>
-            <instance>default</instance>
-        </interface>
+ 	<name>android.hardware.wifi</name>
+ 	<version>2</version>
+         <interface>
+             <name>IWifi</name>
+             <instance>default</instance>
+         </interface>
     </hal>
     <hal format="aidl" optional="true">
-        <name>android.hardware.wifi.hostapd</name>
-        <interface>
+         <name>android.hardware.wifi.hostapd</name>
+         <version>2</version>
+         <interface>
             <name>IHostapd</name>
             <instance>default</instance>
-        </interface>
+         </interface>
     </hal>
     <hal format="aidl" optional="true">
         <name>android.hardware.wifi.supplicant</name>
-        <version>2</version>
+        <version>3</version>
         <interface>
             <name>ISupplicant</name>
             <instance>default</instance>
@@ -932,7 +950,7 @@ IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
     </hal>
     <hal format="aidl" optional="true">
        <name>android.hardware.bluetooth.audio</name>
-       <version>3</version>
+       <version>4</version>
        <interface>
           <name>IBluetoothAudioProviderFactory</name>
           <instance>default</instance>
@@ -940,12 +958,28 @@ IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
    </hal>
    <hal format="aidl" optional="true">
        <name>android.hardware.power</name>
-       <version>3</version>
+       <version>5</version>
        <interface>
           <name>IPower</name>
           <instance>default</instance>
        </interface>
    </hal>
+   <hal format="aidl" optional="true">
+      <name>android.hardware.sensors</name>
+      <version>2</version>
+      <interface>
+          <name>ISensors</name>
+          <instance>default</instance>
+      </interface>
+    </hal>
+   <hal format="aidl" optional="true">
+      <name>android.hardware.thermal</name>
+      <version>1</version>
+      <interface>
+          <name>IThermal</name>
+          <instance>default</instance>
+      </interface>
+    </hal>
    <hal format="aidl" optional="true">
     <name>android.hardware.vibrator</name>
     <version>2</version>
