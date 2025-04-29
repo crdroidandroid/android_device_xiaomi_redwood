@@ -162,9 +162,6 @@ TARGET_USERIMAGES_SPARSE_F2FS_DISABLED := true
 # Platform
 TARGET_BOARD_PLATFORM := lahaina
 
-# Power
-TARGET_POWER_LIBPERFMGR_MODE_EXTENSION_LIB := //$(DEVICE_PATH):libperfmgr-ext-xiaomi
-
 # Properties
 TARGET_ODM_PROP += $(DEVICE_PATH)/odm.prop
 TARGET_SYSTEM_PROP += $(DEVICE_PATH)/system.prop
