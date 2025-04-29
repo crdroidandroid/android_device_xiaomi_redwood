@@ -50,9 +50,6 @@ TARGET_BOOTLOADER_BOARD_NAME := redwood
 # Bootloader
 TARGET_NO_BOOTLOADER := true
 
-# Camera
-TARGET_CAMERA_SERVICE_EXT_LIB := //$(DEVICE_PATH):libcameraservice_extension.xiaomi_redwood
-
 # Display
 TARGET_SCREEN_DENSITY := 440
 USE_OPENGL_RENDERER := true
