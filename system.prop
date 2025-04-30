@@ -1,6 +1,9 @@
 # Bluetooth
 vendor.bluetooth.soc=hastings
 
+# Camera
+ro.camerax.extensions.enabled=true
+
 # CNE
 persist.vendor.cne.feature=1
 

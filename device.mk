@@ -149,6 +149,10 @@ $(call soong_config_set,camera,override_format_from_reserved,true)
 $(call soong_config_set,camera,package_name,com.android.camera)
 $(call soong_config_set,libcameraservice,ext_lib,libcameraservice_extension.xiaomi_redwood)
 
+# Camera Extensions permissions
+PRODUCT_COPY_FILES += \
+    $(LOCAL_PATH)/configs/permissions/camerax-vendor-extensions.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/permissions/camerax-vendor-extensions.xml
+
 # Codec2
 PRODUCT_PACKAGES += \
     libcodec2_vndk.vendor \
