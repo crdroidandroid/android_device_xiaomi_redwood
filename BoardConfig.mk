@@ -52,7 +52,6 @@ TARGET_NO_BOOTLOADER := true
 
 # Camera
 TARGET_CAMERA_SERVICE_EXT_LIB := //$(DEVICE_PATH):libcameraservice_extension.xiaomi_redwood
-TARGET_CAMERA_PACKAGE_NAME := com.android.camera
 
 # Display
 TARGET_SCREEN_DENSITY := 440
