@@ -41,5 +41,6 @@ PRODUCT_SYSTEM_DEVICE := redwood
 PRODUCT_BUILD_PROP_OVERRIDES += \
     BuildDesc="redwood_global-user 14 UKQ1.240624.001 OS2.0.7.0.UMSMIXM release-keys" \
     BuildFingerprint=POCO/redwood_global/redwood:14/UKQ1.240624.001/OS2.0.7.0.UMSMIXM:user/release-keys \
+    BuildFlavor=redwood_global-user \
     DeviceName=$(PRODUCT_SYSTEM_DEVICE) \
     DeviceProduct=$(PRODUCT_SYSTEM_NAME)
