@@ -85,6 +85,8 @@ blob_fixups: blob_fixups_user_type = {
          .clear_symbol_version('remote_handle_open'),
      'vendor/lib64/libsensor_cal_v2.so': blob_fixup()
          .add_needed('libjsoncpp_shim.so'),
+    ('vendor/lib/hw/audio.primary.lahaina.so', 'vendor/lib/libaudioroute_ext.so'): blob_fixup()
+        .replace_needed('libaudioroute.so', 'libaudioroute-v34.so'),
 }  # fmt: skip
 
 module = ExtractUtilsModule(
