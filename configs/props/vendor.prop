@@ -214,6 +214,7 @@ ro.surface_flinger.set_touch_timer_ms?=200
 ro.surface_flinger.use_color_management=true
 ro.surface_flinger.use_content_detection_for_refresh_rate?=true
 ro.surface_flinger.wcg_composition_dataspace=143261696
+ro.surface_flinger.supports_background_blur=1
 ro.vendor.sf.enable_fb_scaling=1
 vendor.display.comp_mask=0
 vendor.display.disable_excl_rect=0
