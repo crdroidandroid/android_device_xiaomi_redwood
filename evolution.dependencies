@@ -1,0 +1,31 @@
+[
+  {
+    "remote"     : "github-non-los",
+    "repository" : "thepriyanshujangid/device_xiaomi_redwood-kernel",
+    "target_path": "device/xiaomi/redwood-kernel",
+    "branch"     : "Scarlet"
+  },
+  {
+    "repository" : "vendor_xiaomi_redwood",
+    "target_path": "vendor/xiaomi/redwood",
+    "branch"     : "bka"
+  },
+  {
+    "remote"     : "github-non-los",
+    "repository" : "LineageOS/android_hardware_xiaomi",
+    "target_path": "hardware/xiaomi",
+    "branch"     : "lineage-23.0"
+  },
+  {
+    "remote"     : "github-non-los",
+    "repository" : "thepriyanshujangid/hardware_dolby",
+    "target_path": "hardware/dolby",
+    "branch"     : "sony_moto-ui"
+  },
+  {
+    "remote"     : "github-non-los",
+    "repository" : "thepriyanshujangid/vendor_xiaomi_redwood-miuicamera",
+    "target_path": "vendor/xiaomi/redwood-miuicamera",
+    "branch"     : "sixteen"
+  }
+]

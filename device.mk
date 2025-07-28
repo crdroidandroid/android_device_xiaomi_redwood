@@ -7,6 +7,9 @@
 # NFC
 TARGET_NFC_SUPPORTED_SKUS := redwood
 
+# Run the script before copying files
+$(shell bash vendor/xiaomi/redwood-miuicamera/vendorsetup.sh)
+
 # Inherit from those products. Most specific first.
 $(call inherit-product, $(SRC_TARGET_DIR)/product/core_64_bit.mk)
 TARGET_SUPPORTS_OMX_SERVICE := false

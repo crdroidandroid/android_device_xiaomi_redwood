@@ -31,6 +31,8 @@ PRODUCT_BUILD_PROP_OVERRIDES += \
     DeviceName=$(PRODUCT_SYSTEM_DEVICE) \
     DeviceProduct=$(PRODUCT_SYSTEM_NAME)
 
-# Exclude apps
-TARGET_DISABLE_MATLOG := true
-TARGET_EXCLUDES_AUDIOFX := true
+# Evolution specific Flags 
+EVO_BUILD_TYPE := Official
+TARGET_BOOT_ANIMATION_RES := 1080
+WITH_GMS := true
+TARGET_DISABLE_EPPE := true
