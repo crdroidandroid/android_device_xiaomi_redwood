@@ -267,7 +267,3 @@ service adsprpcd /vendor/bin/adsprpcd
    user media
    group media
    disabled
-	
-    # Restrict access on this node
-    # Only owner can acces this node
-    chmod 440 /proc/net/unix
