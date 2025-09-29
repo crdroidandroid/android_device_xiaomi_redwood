@@ -160,9 +160,6 @@ TARGET_USERIMAGES_SPARSE_F2FS_DISABLED := true
 # Platform
 TARGET_BOARD_PLATFORM := lahaina
 
-# Power
-TARGET_POWERHAL_MODE_EXT := $(DEVICE_PATH)/power/power-mode.cpp
-
 # Properties
 TARGET_ODM_PROP += $(DEVICE_PATH)/odm.prop
 TARGET_SYSTEM_PROP += $(DEVICE_PATH)/system.prop
