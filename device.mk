@@ -60,9 +60,12 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     liba2dpoffload \
     libbatterylistener \
+    libexthwplugin \
     libhdmiedid \
     libhfp \
-    libsndmonitor
+    libsndmonitor \
+    libspkrprot \
+    libssrec
 
 PRODUCT_COPY_FILES += \
     $(call find-copy-subdir-files,*,$(LOCAL_PATH)/audio/,$(TARGET_COPY_OUT_VENDOR)/etc/audio/sku_yupik)
