@@ -110,6 +110,9 @@ vendor.audio_hal.period_multiplier=3
 vendor.audio_hal.period_size=192
 vendor.voice.path.for.pcm.voip=true
 
+# Audio hardware
+ro.hardware.audio.primary=redwood
+
 # Bluetooth
 bluetooth.device.class_of_device=90,2,12
 bluetooth.hardware.power.idle_cur_ma=6

@@ -103,8 +103,8 @@ vendor/lib64/soundfx/libqcreverb.so
 vendor/lib64/soundfx/libqcvirt.so
 
 # Audio Hardware
-vendor/lib/hw/audio.primary.lahaina.so
-vendor/lib/liba2dpoffload.so
+vendor/lib/hw/audio.primary.lahaina.so:vendor/lib/hw/audio.primary.redwood.so;FIX_SONAME
+vendor/lib/liba2dpoffload.so:odm/lib/liba2dpoffload.so;MODULE_SUFFIX=_odm
 vendor/lib/libadm.so
 vendor/lib/libaudio_log_utils.so
 vendor/lib/libaudiocloudctrl.so
@@ -118,7 +118,7 @@ vendor/lib/libmmhardware.so
 vendor/lib/libqtigef.so
 vendor/lib/libresampler.so
 vendor/lib/libsndmonitor.so
-vendor/lib/libssrec.so
+vendor/lib/libssrec.so:odm/lib/libssrec.so;MODULE_SUFFIX=_odm
 vendor/lib/libvideoNS.so;DISABLE_CHECKELF
 vendor/lib/vndk/libxlog.so
 
