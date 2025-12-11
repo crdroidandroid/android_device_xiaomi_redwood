@@ -48,7 +48,8 @@ blob_fixups: blob_fixups_user_type = {
         .regex_replace(r'=(\d+)>', r'="\1">'),
     'vendor/lib64/hw/camera.qcom.so': blob_fixup()
         .binary_regex_replace(b'\x73\x74\x5F\x6C\x69\x63\x65\x6E\x73\x65\x2E\x6C\x69\x63', b'\x63\x61\x6D\x65\x72\x61\x5F\x63\x6E\x66\x2E\x74\x78\x74')
-        .add_needed('libprocessgroup_shim.so'),
+        .add_needed('libprocessgroup_shim.so')
+        .replace_needed('libtinyxml2.so', 'libtinyxml2-v34.so'),
     'vendor/lib64/hw/camera.xiaomi.so': blob_fixup()
         .sig_replace('29 07 00 94', '1F 20 03 D5'),
     'vendor/lib64/hw/com.qti.chi.override.so': blob_fixup()
@@ -87,6 +88,8 @@ blob_fixups: blob_fixups_user_type = {
     'vendor/lib64/libmialgoengine.so' : blob_fixup()
         .remove_needed('android.hardware.graphics.allocator@3.0.so')
         .remove_needed('vendor.qti.hardware.display.allocator@3.0.so'),
+     ('vendor/lib64/hw/displayfeature.default.so', 'vendor/lib64/libdpps.so', 'vendor/lib64/libsnapdragoncolor-manager.so', 'vendor/lib/libaudiocloudctrl.so', 'vendor/lib64/liblearningmodule.so'): blob_fixup()
+        .replace_needed('libtinyxml2.so', 'libtinyxml2-v34.so'),
 }  # fmt: skip
 
 module = ExtractUtilsModule(
