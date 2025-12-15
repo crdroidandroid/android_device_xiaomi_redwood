@@ -77,6 +77,9 @@ blob_fixups: blob_fixups_user_type = {
          .clear_symbol_version('remote_handle_close')
          .clear_symbol_version('remote_handle_invoke')
          .clear_symbol_version('remote_handle_open'),
+     'vendor/lib64/libmisight.so': blob_fixup()
+        .add_needed('libjsoncpp_shim.so')
+        .add_needed('libmisightjson_shim.so'),
      'vendor/lib64/libsensor_cal_v2.so': blob_fixup()
          .add_needed('libjsoncpp_shim.so'),
     ('vendor/lib/hw/audio.primary.lahaina.so', 'vendor/lib/libaudioroute_ext.so'): blob_fixup()
