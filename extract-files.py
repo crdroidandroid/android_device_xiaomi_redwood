@@ -40,7 +40,6 @@ lib_fixups: lib_fixups_user_type = {
         'libmmosal',
         'vendor.qti.diaghal@1.0',
         'vendor.qti.imsrtpservice@3.0',
-        'vendor.xiaomi.hardware.displayfeature@1.0',
     ): lib_fixup_vendor_suffix,
 }
 
