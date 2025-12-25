@@ -7,8 +7,6 @@
 DEVICE_PATH := device/xiaomi/redwood
 KERNEL_PATH := device/xiaomi/redwood-kernel
 
-BUILD_BROKEN_DUP_RULES := true
-
 # A/B
 AB_OTA_PARTITIONS += \
     boot \
