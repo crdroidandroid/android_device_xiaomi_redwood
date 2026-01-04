@@ -84,6 +84,9 @@ blob_fixups: blob_fixups_user_type = {
          .add_needed('libjsoncpp_shim.so'),
     ('vendor/lib/hw/audio.primary.lahaina.so', 'vendor/lib/libaudioroute_ext.so'): blob_fixup()
         .replace_needed('libaudioroute.so', 'libaudioroute-v34.so'),
+    'vendor/lib64/libmialgoengine.so' : blob_fixup()
+        .remove_needed('android.hardware.graphics.allocator@3.0.so')
+        .remove_needed('vendor.qti.hardware.display.allocator@3.0.so'),
 }  # fmt: skip
 
 module = ExtractUtilsModule(
