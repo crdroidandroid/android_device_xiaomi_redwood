@@ -184,7 +184,6 @@ debug.sf.high_fps_early_phase_offset_ns=-4000000
 debug.sf.high_fps_late_app_phase_offset_ns=1000000
 debug.sf.high_fps_late_sf_phase_offset_ns=-4000000
 debug.sf.auto_latch_unsignaled=0
-debug.sf.latch_unsignaled=1
 debug.sf.defer_refresh_rate_when_off=1
 debug.sf.treat_170m_as_sRGB=1
 debug.sf.set_idle_timer_ms=3000
