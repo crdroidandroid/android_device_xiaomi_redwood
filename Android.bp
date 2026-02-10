@@ -6,6 +6,9 @@
 soong_namespace {
     imports: [
         "hardware/xiaomi",
+        "hardware/google/interfaces",
+        "hardware/google/pixel",
+        "hardware/lineage/interfaces/power-libperfmgr",
     ],
 }
 

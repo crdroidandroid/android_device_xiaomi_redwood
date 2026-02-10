@@ -6,6 +6,8 @@
 
 DEVICE_PATH := device/xiaomi/redwood
 
+BOARD_VENDOR := xiaomi
+
 # A/B
 AB_OTA_PARTITIONS += \
     boot \
@@ -174,6 +176,7 @@ ENABLE_VENDOR_RIL_SERVICE := true
 VENDOR_SECURITY_PATCH := 2025-12-01
 
 # Sepolicy
+include device/lineage/sepolicy/libperfmgr/sepolicy.mk
 include device/qcom/sepolicy_vndr/SEPolicy.mk
 
 SYSTEM_EXT_PRIVATE_SEPOLICY_DIRS += $(DEVICE_PATH)/sepolicy/private

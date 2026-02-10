@@ -1,8 +1,6 @@
 cc_library_static {
-    name: "libpowermode-ext-redwood",
-    defaults: [
-        "android.hardware.power-ndk_shared",
-    ],
+    name: "libperfmgr-ext-xiaomi",
+    defaults: ["android.hardware.power-ndk_shared"],
     vendor: true,
     srcs: [
         "power-mode.cpp",
