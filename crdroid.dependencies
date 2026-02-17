@@ -1,0 +1,28 @@
+[
+  {
+    "repository" : "crdroidandroid/android_kernel_xiaomi_redwood",
+    "target_path": "kernel/xiaomi/redwood",
+    "branch"     : "16.0"
+  },
+  {
+    "repository" : "crdroidandroid/proprietary_vendor_xiaomi_redwood",
+    "target_path": "vendor/xiaomi/redwood",
+    "branch"     : "16.0"
+  },
+  {
+    "repository" : "crdroidandroid/android_hardware_xiaomi",
+    "target_path": "hardware/xiaomi",
+    "branch"     : "16.0"
+  },
+  {
+    "repository" : "crdroidandroid/android_hardware_dolby",
+    "target_path": "hardware/dolby",
+    "branch"     : "16.0-redwood"
+  },
+  {
+    "remote"     : "crdroid-gitlab",
+    "repository" : "crdroidandroid/proprietary_vendor_xiaomi_miuicamera",
+    "target_path": "vendor/xiaomi/redwood-miuicamera",
+    "branch"     : "16.0-redwood"
+  }
+]

@@ -19,6 +19,7 @@ PRODUCT_DEVICE := redwood
 PRODUCT_MANUFACTURER := Xiaomi
 PRODUCT_MODEL := 22101320G
 PRODUCT_NAME := lineage_redwood
+TARGET_DISABLE_EPPE := true
 
 PRODUCT_GMS_CLIENTID_BASE := android-xiaomi
 
@@ -31,8 +32,5 @@ PRODUCT_BUILD_PROP_OVERRIDES += \
     DeviceName=$(PRODUCT_SYSTEM_DEVICE) \
     DeviceProduct=$(PRODUCT_SYSTEM_NAME)
 
-# Evolution specific Flags 
-EVO_BUILD_TYPE := Official
+# Boot animaton
 TARGET_BOOT_ANIMATION_RES := 1080
-WITH_GMS := true
-TARGET_DISABLE_EPPE := true
