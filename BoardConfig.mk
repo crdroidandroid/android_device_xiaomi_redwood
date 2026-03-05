@@ -82,6 +82,8 @@ $(foreach nfc_sku, $(call to-upper, $(TARGET_NFC_SUPPORTED_SKUS)), \
     $(eval ODM_MANIFEST_$(nfc_sku)_FILES += $(DEVICE_PATH)/hidl/manifest_nfc.xml))
 endif
 
+DEVICE_MANIFEST_FILE += $(DEVICE_PATH)/hidl/c2_manifest_vendor.xml
+
 # Kernel
 BOARD_KERNEL_BASE := 0x00000000
 BOARD_KERNEL_IMAGE_NAME := Image

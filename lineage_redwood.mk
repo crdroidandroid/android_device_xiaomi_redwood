@@ -34,3 +34,6 @@ PRODUCT_BUILD_PROP_OVERRIDES += \
 
 # Boot animaton
 TARGET_BOOT_ANIMATION_RES := 1080
+
+# Dolby Flags
+TARGET_INCLUDES_DolbyVision := true

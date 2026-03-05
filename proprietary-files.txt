@@ -932,7 +932,6 @@ vendor/etc/media_yupik_v1/video_system_specs.json
 vendor/etc/seccomp_policy/codec2.vendor.base-arm.policy
 vendor/etc/seccomp_policy/codec2.vendor.ext-arm.policy
 vendor/etc/video_system_specs.json
-vendor/etc/vintf/manifest/c2_manifest_vendor.xml
 vendor/lib/libmmosal.so;MODULE_SUFFIX=_vendor
 vendor/lib/libqc2vppfilter.so
 vendor/lib/libqcodec2_base.so
