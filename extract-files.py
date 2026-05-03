@@ -54,7 +54,7 @@ blob_fixups: blob_fixups_user_type = {
     'vendor/lib/libaudioroute_ext.so': blob_fixup()
         .replace_needed('libaudioroute.so', 'libaudioroute-v34.so'),
     'vendor/lib64/hw/camera.qcom.so': blob_fixup()
-        .binary_regex_replace(b'\x73\x74\x5F\x6C\x69\x63\x65\x6E\x73\x65\x2E\x6C\x69\x63', b'\x63\x61\x6D\x65\x72\x61\x5F\x63\x6E\x66\x2E\x74\x78\x74')
+        .sig_replace('73 74 5F 6C 69 63 65 6E 73 65 2E 6C 69 63', '63 61 6D 65 72 61 5F 63 6E 66 2E 74 78 74')
         .add_needed('libprocessgroup_shim.so')
         .replace_needed('libtinyxml2.so', 'libtinyxml2-v34.so'),
     'vendor/lib64/hw/camera.xiaomi.so': blob_fixup()
