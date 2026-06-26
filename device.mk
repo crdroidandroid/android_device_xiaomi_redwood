@@ -187,10 +187,6 @@ PRODUCT_PACKAGES += \
     android.hardware.drm-service.clearkey \
     libcrypto_shim
 
-# Fastbootd
-PRODUCT_PACKAGES += \
-    fastbootd
-
 # Fingerprint
 PRODUCT_PACKAGES += \
     android.hardware.biometrics.fingerprint-service.xiaomi
