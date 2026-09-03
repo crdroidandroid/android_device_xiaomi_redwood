@@ -1,4 +1,5 @@
 app_domain(devicesettings_app)
+typeattribute devicesettings_app coredomain;
 
 # Allow devicesettings_app to find *_service
 allow devicesettings_app {
@@ -20,9 +21,7 @@ allow devicesettings_app system_app_data_file:{ file lnk_file } create_file_perm
 binder_call(devicesettings_app, gpuservice)
 
 # Allow devicesettings_app to read and write to cgroup/sysfs_leds/sysfs_thermal
-allow devicesettings_app sysfs_leds:dir search;
 allow devicesettings_app {
   cgroup
-  sysfs_leds
   sysfs_thermal
 }:{ file lnk_file } rw_file_perms;
