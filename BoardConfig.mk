@@ -58,6 +58,13 @@ TARGET_NO_BOOTLOADER := true
 TARGET_SCREEN_DENSITY := 440
 USE_OPENGL_RENDERER := true
 
+# Dolby Vision Soong config
+SOONG_CONFIG_NAMESPACES += dolby_vision
+SOONG_CONFIG_dolby_vision += enabled
+SOONG_CONFIG_dolby_vision_enabled := true
+
+TARGET_USES_DOLBY_VISION := true
+
 # Filesystem
 TARGET_FS_CONFIG_GEN := $(DEVICE_PATH)/config.fs
 
@@ -80,6 +87,12 @@ ifneq ($(TARGET_NFC_SUPPORTED_SKUS),)
 ODM_MANIFEST_SKUS += $(TARGET_NFC_SUPPORTED_SKUS)
 $(foreach nfc_sku, $(call to-upper, $(TARGET_NFC_SUPPORTED_SKUS)), \
     $(eval ODM_MANIFEST_$(nfc_sku)_FILES += $(DEVICE_PATH)/hidl/manifest_nfc.xml))
+endif
+
+ifeq ($(TARGET_INCLUDES_DolbyVision),true)
+    DEVICE_MANIFEST_FILE += $(DEVICE_PATH)/hidl/vision/c2_manifest_vendor.xml
+else
+    DEVICE_MANIFEST_FILE += $(DEVICE_PATH)/hidl/c2_manifest_vendor.xml
 endif
 
 # Kernel
