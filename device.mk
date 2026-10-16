@@ -180,6 +180,10 @@ PRODUCT_DEFAULT_PROPERTY_OVERRIDES += \
     dalvik.vm.image-dex2oat-threads=8
 
 # Dolby
+TARGET_INCLUDES_DolbyVision := true
+TARGET_INCLUDES_OEM_App := true
+TARGET_INCLUDES_SWDOLBY := true
+
 $(call inherit-product, hardware/dolby/dolby.mk)
 
 # DRM

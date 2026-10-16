@@ -29,6 +29,10 @@ import org.lineageos.settings.utils.FileUtils;
 import org.lineageos.settings.thermal.ThermalUtils;
 import org.lineageos.settings.refreshrate.RefreshUtils;
 
+import android.hardware.display.DisplayManager;
+import android.view.Display;
+import android.view.Display.HdrCapabilities;
+
 public class BootCompletedReceiver extends BroadcastReceiver {
     private static final boolean DEBUG = false;
     private static final String TAG = "XiaomiParts";
@@ -55,5 +59,23 @@ public class BootCompletedReceiver extends BroadcastReceiver {
         // Data is now accessible (user has just unlocked).
         RefreshUtils.initialize(context);
         ThermalUtils.startService(context);
-    }        
+        overrideHdrTypes(context);
+    }
+
+    private static void overrideHdrTypes(Context context) {
+        try {
+            final DisplayManager dm = context.getSystemService(DisplayManager.class);
+            if (dm != null) {
+                dm.overrideHdrTypes(Display.DEFAULT_DISPLAY, new int[]{
+                        HdrCapabilities.HDR_TYPE_DOLBY_VISION,
+                        HdrCapabilities.HDR_TYPE_HDR10,
+                        HdrCapabilities.HDR_TYPE_HLG,
+                        HdrCapabilities.HDR_TYPE_HDR10_PLUS
+                });
+                if (DEBUG) Log.i(TAG, "HDR types overridden successfully.");
+            }
+        } catch (Exception e) {
+            Log.e(TAG, "Error overriding HDR types", e);
+        }
+    }
 }
