@@ -191,6 +191,9 @@ PRODUCT_PACKAGES += \
     android.hardware.drm-service.clearkey \
     libcrypto_shim
 
+# Face unlock
+TARGET_FACE_UNLOCK_SUPPORTED := true
+
 # Fingerprint
 PRODUCT_PACKAGES += \
     android.hardware.biometrics.fingerprint-service.xiaomi
